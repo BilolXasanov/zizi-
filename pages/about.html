@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="About Zizi Xasanov - Learn about my journey as a web developer, technical philosophy, and passion for creating exceptional digital experiences">
+    <meta name="keywords"
+          content="Zizi Xasanov, About, Web Developer, Vue.js Developer, Frontend Developer, Career Journey">
+    <meta name="author" content="Zizi Xasanov">
+    <title>About - Zizi Xasanov | Developer Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script type="module" async
+            src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fziziportfo5261back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.14"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+</head>
+<body class="bg-background text-text-primary scrollbar-custom">
+
+<!-- Dynamic Header Navigation -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 glass-effect shadow-md">
+    <nav class="section-container">
+        <div class="flex items-center justify-between py-4 md:py-6">
+            <!-- Logo -->
+            <a href="homepage.html" class="flex items-center space-x-2 group">
+                <svg class="w-10 h-10 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 40 40"
+                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+                    <path d="M12 28L20 12L28 28H24L20 20L16 28H12Z" fill="#0d1117"/>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#64ffda"/>
+                            <stop offset="1" stop-color="#7fffd4"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="font-headline text-xl font-bold gradient-text hidden sm:block">ZX</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="homepage.html"
+                       class="nav-link font-cta text-sm hover:text-accent transition-colors duration-200">Home</a></li>
+                <li><a href="about.html" class="nav-link font-cta text-sm text-accent transition-colors duration-200">About</a>
+                </li>
+                <li><a href="skills.html"
+                       class="nav-link font-cta text-sm hover:text-accent transition-colors duration-200">Skills</a>
+                </li>
+                <li><a href="projects.html"
+                       class="nav-link font-cta text-sm hover:text-accent transition-colors duration-200">Projects</a>
+                </li>
+                <li><a href="contact.html"
+                       class="nav-link font-cta text-sm hover:text-accent transition-colors duration-200">Contact</a>
+                </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="contact.html" class="btn btn-primary hidden md:inline-flex">
+                Let's Connect
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn"
+                    class="md:hidden p-2 rounded-md hover:bg-surface transition-colors duration-200"
+                    aria-label="Toggle mobile menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="homepage.html"
+                       class="block py-2 font-cta text-sm hover:text-accent transition-colors duration-200">Home</a>
+                </li>
+                <li><a href="about.html" class="block py-2 font-cta text-sm text-accent transition-colors duration-200">About</a>
+                </li>
+                <li><a href="skills.html"
+                       class="block py-2 font-cta text-sm hover:text-accent transition-colors duration-200">Skills</a>
+                </li>
+                <li><a href="projects.html"
+                       class="block py-2 font-cta text-sm hover:text-accent transition-colors duration-200">Projects</a>
+                </li>
+                <li><a href="contact.html"
+                       class="block py-2 font-cta text-sm hover:text-accent transition-colors duration-200">Contact</a>
+                </li>
+                <li><a href="contact.html" class="btn btn-primary w-full">Let's Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="relative pt-32 pb-16 overflow-hidden">
+    <!-- Background Decorative Elements -->
+    <div class="absolute top-20 left-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+
+    <div class="section-container relative z-10">
+        <div class="max-w-4xl mx-auto text-center space-y-6 animate-fade-in">
+            <p class="font-code text-accent text-sm md:text-base">Get to know me</p>
+            <h1 class="heading-xl font-headline">
+                About Me
+            </h1>
+            <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                Bridging the gap between backend functionality and frontend artistry
+            </p>
+            <div class="w-24 h-1 bg-accent mx-auto"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Personal Story Section -->
+<section class="section bg-background-elevated">
+    <div class="section-container">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Profile Image -->
+                <div class="relative animate-fade-in order-2 md:order-1">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-accent/20 rounded-lg blur-xl group-hover:bg-accent/30 transition-all duration-300"></div>
+                        <div class="relative overflow-hidden rounded-lg border-2 border-accent/50 group-hover:border-accent transition-all duration-300">
+                            <img src="../images/photo_2026-01-21_22-02-18.jpg"
+                                 alt="Zizi Xasanov - Professional web developer portrait in modern office setting, showcasing confident and approachable personality"
+                                 class="w-full h-auto object-cover aspect-square grayscale group-hover:grayscale-0 transition-all duration-300">
+                        </div>
+                    </div>
+                    <!-- Decorative Element -->
+                    <div class="absolute -bottom-4 -right-4 w-64 h-64 border-2 border-accent/30 rounded-lg -z-10"></div>
+                </div>
+
+                <!-- About Content -->
+                <div class="space-y-6 animate-slide-in order-1 md:order-2">
+                    <div class="space-y-4">
+                        <h2 class="heading-md font-headline">
+                            <span class="text-accent font-code text-lg">01.</span> My Story
+                        </h2>
+                        <p class="body-md text-text-secondary">
+                            Hello! My name is Zizi, and I am a passionate and curious learner with a strong interest in
+                            technology, coding, and digital creativity. I have experience working with modern web
+                            technologies, including Vue.js, Tailwind CSS, SCSS, and JavaScript, and I enjoy creating
+                            responsive, interactive, and visually appealing web projects. Over time, I have developed a
+                            keen eye for design, a solid understanding of UI/UX principles, and the ability to turn
+                            ideas into fully functional digital solutions.
+
+                            I love working on projects that challenge me to think critically and push my skills further.
+                            For example, I have been developing complex Vue.js applications where I structure components
+                            thoughtfully, implement modern styling techniques, and focus on scalability and
+                            maintainability. I also enjoy experimenting with 3D interactions, animations, and gaming
+                            concepts, which allows me to explore creative problem-solving and innovative user
+                            experiences. </p>
+                        <p class="body-md text-text-secondary">
+                            Beyond coding and design, I am deeply interested in personal growth, self-improvement, and
+                            learning new technologies. I approach every project with patience, dedication, and a growth
+                            mindset, always aiming to learn something new and improve the final result. I enjoy
+                            collaborating with others, sharing knowledge, and exchanging ideas to build better solutions
+                            and expand my perspective.
+
+                            In my free time, I like exploring new technologies, working on creative projects, reading,
+                            and staying informed about the latest trends in web development and digital innovation. I am
+                            motivated by challenges, enjoy solving complex problems, and always strive to combine
+                            creativity with functionality in everything I do.
+                        </p>
+                        <p class="body-md text-text-secondary">
+                            I believe that technology is not just about code—it’s about creating meaningful experiences,
+                            connecting people, and making ideas come to life. With a strong foundation in web
+                            development, a passion for learning, and a dedication to continuous improvement, I am ready
+                            to take on new opportunities, collaborate on exciting projects, and contribute to innovative
+                            solutions.
+                        </p>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="card p-4 text-center">
+                            <div class="text-3xl font-headline font-bold text-accent mb-2">5+</div>
+                            <div class="body-sm text-text-secondary">Years Experience</div>
+                        </div>
+                        <div class="card p-4 text-center">
+                            <div class="text-3xl font-headline font-bold text-accent mb-2">50+</div>
+                            <div class="body-sm text-text-secondary">Projects Completed</div>
+                        </div>
+                        <div class="card p-4 text-center">
+                            <div class="text-3xl font-headline font-bold text-accent mb-2">30+</div>
+                            <div class="body-sm text-text-secondary">Happy Clients</div>
+                        </div>
+                        <div class="card p-4 text-center">
+                            <div class="text-3xl font-headline font-bold text-accent mb-2">100%</div>
+                            <div class="body-sm text-text-secondary">Dedication</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Philosophy Section -->
+<section class="section">
+    <div class="section-container">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-slide-up">
+                <h2 class="heading-md font-headline mb-4">
+                    <span class="text-accent font-code text-lg">02.</span> Technical Philosophy
+                </h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                    Where technical skill meets design thinking
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Philosophy Card 1 -->
+                <div class="card card-hover space-y-4">
+                    <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
+                        <span class="text-4xl">💻</span>
+                    </div>
+                    <h3 class="heading-sm font-headline">Code Quality</h3>
+                    <p class="body-sm text-text-secondary">
+                        I believe in writing clean, maintainable code that follows best practices and industry
+                        standards. Every line of code should be purposeful and well-documented.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-accent">Clean Code</span>
+                        <span class="badge badge-accent">Best Practices</span>
+                    </div>
+                </div>
+
+                <!-- Philosophy Card 2 -->
+                <div class="card card-hover space-y-4">
+                    <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
+                        <span class="text-4xl">🎨</span>
+                    </div>
+                    <h3 class="heading-sm font-headline">Design Sensibility</h3>
+                    <p class="body-sm text-text-secondary">
+                        Technical skill must be paired with design sensibility. I craft digital experiences that are not
+                        only functional but also aesthetically pleasing and intuitive.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-accent">UX Focus</span>
+                        <span class="badge badge-accent">Aesthetics</span>
+                    </div>
+                </div>
+
+                <!-- Philosophy Card 3 -->
+                <div class="card card-hover space-y-4">
+                    <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
+                        <span class="text-4xl">🚀</span>
+                    </div>
+                    <h3 class="heading-sm font-headline">Continuous Growth</h3>
+                    <p class="body-sm text-text-secondary">
+                        The web development landscape is constantly evolving. I'm committed to continuous learning and
+                        staying updated with the latest technologies and methodologies.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-accent">Learning</span>
+                        <span class="badge badge-accent">Innovation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div class="mt-16 card p-8 space-y-6">
+                <h3 class="heading-sm font-headline text-center mb-8">Core Values</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
+                            <span class="text-accent">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-lg font-semibold mb-2">Precision & Attention to Detail</h4>
+                            <p class="body-sm text-text-secondary">Every pixel matters. I ensure that every element is
+                                perfectly aligned and every interaction is smooth.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
+                            <span class="text-accent">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-lg font-semibold mb-2">User-Centered Approach</h4>
+                            <p class="body-sm text-text-secondary">The end user is always at the heart of my development
+                                process. Accessibility and usability are non-negotiable.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
+                            <span class="text-accent">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-lg font-semibold mb-2">Collaborative Spirit</h4>
+                            <p class="body-sm text-text-secondary">Great products are built by great teams. I thrive in
+                                collaborative environments and value diverse perspectives.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
+                            <span class="text-accent">✓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-lg font-semibold mb-2">Performance Optimization</h4>
+                            <p class="body-sm text-text-secondary">Fast, efficient applications are essential. I
+                                optimize for performance without compromising on features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Professional Journey Timeline -->
+<section class="section bg-background-elevated">
+    <div class="section-container">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-slide-up">
+                <h2 class="heading-md font-headline mb-4">
+                    <span class="text-accent font-code text-lg">03.</span> Professional Journey
+                </h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                    My path to becoming a Vue.js specialist
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-border"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- 2026 - Present -->
+                    <div class="timeline-item relative" data-year="2026">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div class="md:text-right space-y-4 order-2 md:order-1">
+                                <div class="inline-block md:float-right">
+                                    <span class="badge badge-success">Current</span>
+                                </div>
+                                <h3 class="heading-sm font-headline clear-both">Senior Frontend Developer</h3>
+                                <p class="body-sm text-text-secondary">
+                                    Leading Vue.js projects and mentoring junior developers. Architecting scalable
+                                    frontend solutions and establishing best practices for the development team.
+                                </p>
+                                <div class="flex flex-wrap gap-2 md:justify-end">
+                                    <span class="badge badge-accent">Vue 3</span>
+                                    <span class="badge badge-accent">TypeScript</span>
+                                    <span class="badge badge-accent">Team Lead</span>
+                                    <span class="badge badge-accent">Architecture</span>
+                                </div>
+                            </div>
+                            <div class="order-1 md:order-2">
+                                <div class="card card-hover p-6 ml-0 md:ml-8">
+                                    <div class="flex items-center space-x-4 mb-4">
+                                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                                            <span class="text-accent font-headline font-bold text-lg">26</span>
+                                        </div>
+                                        <div>
+                                            <div class="font-headline font-semibold">2026 - Present</div>
+                                            <div class="body-sm text-text-secondary">Tech Innovations Inc.</div>
+                                        </div>
+                                    </div>
+                                    <ul class="space-y-2 body-sm text-text-secondary">
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Led migration of legacy codebase to Vue 3 Composition API</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Mentored 5+ junior developers in modern frontend practices</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Improved application performance by 40% through optimization</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024 - 2026 -->
+                    <div class="timeline-item relative" data-year="2024">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div class="order-2">
+                                <div class="card card-hover p-6 mr-0 md:mr-8">
+                                    <div class="flex items-center space-x-4 mb-4">
+                                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                                            <span class="text-accent font-headline font-bold text-lg">24</span>
+                                        </div>
+                                        <div>
+                                            <div class="font-headline font-semibold">2024 - 2026</div>
+                                            <div class="body-sm text-text-secondary">Digital Solutions Co.</div>
+                                        </div>
+                                    </div>
+                                    <ul class="space-y-2 body-sm text-text-secondary">
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Developed 15+ production-ready Vue.js applications</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Implemented comprehensive testing strategies with Vitest</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Collaborated with UX team to enhance user experiences</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-y-4 order-1">
+                                <h3 class="heading-sm font-headline">Frontend Developer</h3>
+                                <p class="body-sm text-text-secondary">
+                                    Building responsive web applications with modern frameworks. Focused on creating
+                                    intuitive user interfaces and implementing complex state management solutions.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="badge badge-accent">Vue.js</span>
+                                    <span class="badge badge-accent">Nuxt.js</span>
+                                    <span class="badge badge-accent">REST APIs</span>
+                                    <span class="badge badge-accent">Pinia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2022 - 2024 -->
+                    <div class="timeline-item relative" data-year="2022">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div class="md:text-right space-y-4 order-2 md:order-1">
+                                <h3 class="heading-sm font-headline">Junior Web Developer</h3>
+                                <p class="body-sm text-text-secondary">
+                                    Started professional journey in web development. Learned fundamental concepts and
+                                    best practices while contributing to various client projects.
+                                </p>
+                                <div class="flex flex-wrap gap-2 md:justify-end">
+                                    <span class="badge badge-accent">HTML/CSS</span>
+                                    <span class="badge badge-accent">JavaScript</span>
+                                    <span class="badge badge-accent">Git</span>
+                                    <span class="badge badge-accent">Responsive Design</span>
+                                </div>
+                            </div>
+                            <div class="order-1 md:order-2">
+                                <div class="card card-hover p-6 ml-0 md:ml-8">
+                                    <div class="flex items-center space-x-4 mb-4">
+                                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                                            <span class="text-accent font-headline font-bold text-lg">22</span>
+                                        </div>
+                                        <div>
+                                            <div class="font-headline font-semibold">2022 - 2024</div>
+                                            <div class="body-sm text-text-secondary">WebCraft Agency</div>
+                                        </div>
+                                    </div>
+                                    <ul class="space-y-2 body-sm text-text-secondary">
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Built 20+ responsive websites for diverse clients</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Mastered modern CSS frameworks and preprocessors</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Gained experience with version control and team workflows</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2020 - 2022 -->
+                    <div class="timeline-item relative" data-year="2020">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div class="order-2">
+                                <div class="card card-hover p-6 mr-0 md:mr-8">
+                                    <div class="flex items-center space-x-4 mb-4">
+                                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                                            <span class="text-accent font-headline font-bold text-lg">20</span>
+                                        </div>
+                                        <div>
+                                            <div class="font-headline font-semibold">2020 - 2022</div>
+                                            <div class="body-sm text-text-secondary">Self-Learning & Freelance</div>
+                                        </div>
+                                    </div>
+                                    <ul class="space-y-2 body-sm text-text-secondary">
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Completed intensive web development bootcamp</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Built portfolio of personal and freelance projects</span>
+                                        </li>
+                                        <li class="flex items-start space-x-2">
+                                            <span class="text-accent mt-1">▹</span>
+                                            <span>Discovered passion for Vue.js and modern frameworks</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-y-4 order-1">
+                                <h3 class="heading-sm font-headline">The Beginning</h3>
+                                <p class="body-sm text-text-secondary">
+                                    Embarked on my web development journey through self-study and online courses. Built
+                                    foundational skills and discovered my passion for creating digital experiences.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="badge badge-accent">Self-Taught</span>
+                                    <span class="badge badge-accent">Bootcamp</span>
+                                    <span class="badge badge-accent">Freelance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section">
+    <div class="section-container">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-slide-up">
+                <h2 class="heading-md font-headline mb-4">
+                    <span class="text-accent font-code text-lg">04.</span> What Others Say
+                </h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                    Testimonials from colleagues and clients
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card card-hover p-8 space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <img
+                                src="https://img.rocket.new/generatedImages/rocket_gen_img_1bb18e0a9-1763297020873.png"
+                                alt="Sarah Johnson - Senior Product Manager at Tech Innovations Inc., professional headshot"
+                                class="w-16 h-16 rounded-full object-cover border-2 border-accent/50"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                        >
+                        <div>
+                            <h4 class="font-headline text-lg font-semibold">Sarah Johnson</h4>
+                            <p class="body-sm text-text-secondary">Senior Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="body-md text-text-secondary italic">
+                        "Zizi's ability to translate complex requirements into elegant, user-friendly interfaces is
+                        exceptional. His attention to detail and commitment to code quality make him an invaluable team
+                        member."
+                    </p>
+                    <div class="flex items-center space-x-1">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card card-hover p-8 space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <img
+                                src="https://img.rocket.new/generatedImages/rocket_gen_img_1ee15c398-1763295037965.png"
+                                alt="Michael Chen - Lead Developer at Digital Solutions Co., professional headshot"
+                                class="w-16 h-16 rounded-full object-cover border-2 border-accent/50"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                        >
+                        <div>
+                            <h4 class="font-headline text-lg font-semibold">Michael Chen</h4>
+                            <p class="body-sm text-text-secondary">Lead Developer</p>
+                        </div>
+                    </div>
+                    <p class="body-md text-text-secondary italic">
+                        "Working with Zizi has been a pleasure. His Vue.js expertise and problem-solving skills
+                        consistently deliver outstanding results. He's also an excellent mentor to junior developers."
+                    </p>
+                    <div class="flex items-center space-x-1">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card card-hover p-8 space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <img
+                                src="https://img.rocket.new/generatedImages/rocket_gen_img_1e9b223eb-1763294391245.png"
+                                alt="Emily Rodriguez - UX Designer at Creative Studio, professional headshot"
+                                class="w-16 h-16 rounded-full object-cover border-2 border-accent/50"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                        >
+                        <div>
+                            <h4 class="font-headline text-lg font-semibold">Emily Rodriguez</h4>
+                            <p class="body-sm text-text-secondary">UX Designer</p>
+                        </div>
+                    </div>
+                    <p class="body-md text-text-secondary italic">
+                        "Zizi understands the importance of design in development. His implementations always respect
+                        the design vision while adding thoughtful improvements that enhance the user experience."
+                    </p>
+                    <div class="flex items-center space-x-1">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card card-hover p-8 space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <img
+                                src="https://img.rocket.new/generatedImages/rocket_gen_img_1fb00d656-1763291827615.png"
+                                alt="David Thompson - CEO at StartupHub, professional headshot"
+                                class="w-16 h-16 rounded-full object-cover border-2 border-accent/50"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+                        >
+                        <div>
+                            <h4 class="font-headline text-lg font-semibold">David Thompson</h4>
+                            <p class="body-sm text-text-secondary">CEO, StartupHub</p>
+                        </div>
+                    </div>
+                    <p class="body-md text-text-secondary italic">
+                        "Zizi transformed our vision into reality with a stunning, high-performance web application. His
+                        technical expertise and creative approach exceeded our expectations. Highly recommended!"
+                    </p>
+                    <div class="flex items-center space-x-1">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section bg-background-elevated">
+    <div class="section-container">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <h2 class="heading-lg font-headline">
+                Let's Build Something Amazing Together
+            </h2>
+            <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                I'm always interested in hearing about new projects and opportunities. Whether you have a question or
+                just want to say hi, feel free to reach out!
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="contact.html" class="btn btn-primary">
+                    Get In Touch
+                </a>
+                <a href="projects.html" class="btn btn-secondary">
+                    View My Work
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Network -->
+<footer class="bg-background border-t border-border py-12">
+    <div class="section-container">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <a href="homepage.html" class="flex items-center space-x-2 group">
+                        <svg class="w-10 h-10 transition-transform duration-300 group-hover:scale-110"
+                             viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="url(#footer-logo-gradient)"/>
+                            <path d="M12 28L20 12L28 28H24L20 20L16 28H12Z" fill="#0d1117"/>
+                            <defs>
+                                <linearGradient id="footer-logo-gradient" x1="0" y1="0" x2="40" y2="40"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#64ffda"/>
+                                    <stop offset="1" stop-color="#7fffd4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="font-headline text-xl font-bold gradient-text">Zizi Xasanov</span>
+                    </a>
+                    <p class="body-sm text-text-secondary">
+                        Crafting digital experiences with precision and creativity.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="link-subtle body-sm">Home</a></li>
+                        <li><a href="about.html" class="link-subtle body-sm">About</a></li>
+                        <li><a href="skills.html" class="link-subtle body-sm">Skills</a></li>
+                        <li><a href="projects.html" class="link-subtle body-sm">Projects</a></li>
+                        <li><a href="contact.html" class="link-subtle body-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h3 class="font-headline text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                           class="w-10 h-10 rounded-full bg-surface hover:bg-accent/10 flex items-center justify-center text-text-secondary hover:text-accent transition-all duration-200"
+                           aria-label="GitHub profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                           class="w-10 h-10 rounded-full bg-surface hover:bg-accent/10 flex items-center justify-center text-text-secondary hover:text-accent transition-all duration-200"
+                           aria-label="LinkedIn profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                           class="w-10 h-10 rounded-full bg-surface hover:bg-accent/10 flex items-center justify-center text-text-secondary hover:text-accent transition-all duration-200"
+                           aria-label="Twitter profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 border-t border-border text-center">
+                <p class="body-sm text-text-secondary">
+                    © 2026 Zizi Xasanov. All Rights Reserved. Built with Vue.js & Tailwind CSS
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    // Timeline Animation with Intersection Observer
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    timelineItems.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        item.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        timelineObserver.observe(item);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Animate elements on scroll
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.animate-slide-up, .animate-slide-in, .animate-fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) translateX(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        elements.forEach(el => {
+            el.style.opacity = '0';
+            if (el.classList.contains('animate-slide-up')) {
+                el.style.transform = 'translateY(20px)';
+            } else if (el.classList.contains('animate-slide-in')) {
+                el.style.transform = 'translateX(-20px)';
+            }
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    };
+
+    animateOnScroll();
+</script>
+<script id="dhws-dataInjector" src="../../zizi-dev/public/dhws-data-injector.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zizi Xasanov - Skills & Expertise | Interactive skill visualization showcasing Vue.js mastery, frontend development, and modern web technologies">
+    <meta name="keywords" content="Vue.js Skills, Web Development Expertise, Frontend Technologies, JavaScript Proficiency, Zizi Xasanov">
+    <meta name="author" content="Zizi Xasanov">
+    <title>Skills & Expertise - Zizi Xasanov</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fziziportfo5261back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.14"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+</head>
+<body class="bg-background text-text-primary scrollbar-custom">
+
+<!-- Dynamic Header Navigation -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 glass-effect shadow-md">
+    <nav class="section-container">
+        <div class="flex items-center justify-between py-4 md:py-6">
+            <!-- Logo -->
+            <a href="homepage.html" class="flex items-center space-x-2 group">
+                <svg class="w-10 h-10 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+                    <path d="M12 28L20 12L28 28H24L20 20L16 28H12Z" fill="#0d1117"/>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#64ffda"/>
+                            <stop offset="1" stop-color="#7fffd4"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="font-headline text-xl font-bold gradient-text hidden sm:block">ZX</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="homepage.html" class="nav-link font-cta text-sm hover:text-accent transition-colors duration-200">Home</a></li>
+                <li><a href="about.html" class="nav-link font-cta text-sm hover:text-accent transition-colors duration-200">About</a></li>
+                <li><a href="skills.html" class="nav-link font-cta text-sm text-accent transition-colors duration-200">Skills</a></li>
+                <li><a href="projects.html" class="nav-link font-cta text-sm hover:text-accent transition-colors duration-200">Projects</a></li>
+                <li><a href="contact.html" class="nav-link font-cta text-sm hover:text-accent transition-colors duration-200">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="contact.html" class="btn btn-primary hidden md:inline-flex">
+                Let's Connect
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md hover:bg-surface transition-colors duration-200" aria-label="Toggle mobile menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="homepage.html" class="block py-2 font-cta text-sm hover:text-accent transition-colors duration-200">Home</a></li>
+                <li><a href="about.html" class="block py-2 font-cta text-sm hover:text-accent transition-colors duration-200">About</a></li>
+                <li><a href="skills.html" class="block py-2 font-cta text-sm text-accent transition-colors duration-200">Skills</a></li>
+                <li><a href="projects.html" class="block py-2 font-cta text-sm hover:text-accent transition-colors duration-200">Projects</a></li>
+                <li><a href="contact.html" class="block py-2 font-cta text-sm hover:text-accent transition-colors duration-200">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary w-full">Let's Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="relative pt-32 pb-16 overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="section-container relative z-10">
+        <div class="max-w-4xl mx-auto text-center space-y-6 animate-fade-in">
+            <p class="font-code text-accent text-sm md:text-base">Technical Proficiency</p>
+            <h1 class="heading-xl font-headline">
+                Skills & <span class="gradient-text">Expertise</span>
+            </h1>
+            <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                A comprehensive overview of my technical capabilities, tools, and technologies I work with to create exceptional digital experiences.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Filter & Sort -->
+<section class="section-container pb-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="card p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap items-center gap-3">
+                <button class="skill-filter-btn active" data-category="all">
+                    <span class="text-xl mr-2">🌟</span>
+                    All Skills
+                </button>
+                <button class="skill-filter-btn" data-category="frontend">
+                    <span class="text-xl mr-2">💻</span>
+                    Frontend
+                </button>
+                <button class="skill-filter-btn" data-category="backend">
+                    <span class="text-xl mr-2">⚡</span>
+                    Backend
+                </button>
+                <button class="skill-filter-btn" data-category="design">
+                    <span class="text-xl mr-2">🎨</span>
+                    Design
+                </button>
+                <button class="skill-filter-btn" data-category="tools">
+                    <span class="text-xl mr-2">🔧</span>
+                    Tools
+                </button>
+            </div>
+
+            <!-- Sort & Reset -->
+            <div class="flex items-center gap-3">
+                <select id="skill-sort" class="input py-2 text-sm">
+                    <option value="default">Sort by Default</option>
+                    <option value="proficiency">Sort by Proficiency</option>
+                    <option value="experience">Sort by Experience</option>
+                    <option value="name">Sort by Name</option>
+                </select>
+                <button id="reset-filters" class="btn btn-ghost px-4 py-2 text-sm" aria-label="Reset filters">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Laboratory -->
+<section class="section bg-background-elevated">
+    <div class="section-container">
+        <div class="max-w-6xl mx-auto">
+            <!-- Skills Grid -->
+            <div id="skills-grid" class="grid md:grid-cols-2 gap-8">
+                <!-- Skills will be dynamically inserted here -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="hidden text-center py-16">
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-surface mb-6">
+                    <svg class="w-10 h-10 text-text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="heading-sm mb-2">No Skills Found</h3>
+                <p class="body-sm text-text-secondary">Try adjusting your filters or reset to see all skills.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skill Comparison Tool -->
+<section class="section">
+    <div class="section-container">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12 animate-slide-up">
+                <h2 class="heading-md font-headline mb-4">
+                    Compare Your Skills
+                </h2>
+                <p class="body-md text-text-secondary">
+                    Select skills to see how they compare with my expertise
+                </p>
+            </div>
+
+            <div class="card p-8">
+                <div class="space-y-6">
+                    <!-- Comparison Selection -->
+                    <div>
+                        <label class="block body-sm font-medium mb-3">Select Skills to Compare</label>
+                        <div id="comparison-skills" class="flex flex-wrap gap-2">
+                            <!-- Comparison checkboxes will be inserted here -->
+                        </div>
+                    </div>
+
+                    <!-- Comparison Chart -->
+                    <div id="comparison-chart" class="hidden">
+                        <div class="border-t border-border pt-6 mt-6">
+                            <h3 class="heading-sm mb-6">Skill Comparison Chart</h3>
+                            <div id="comparison-bars" class="space-y-4">
+                                <!-- Comparison bars will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comparison Actions -->
+                    <div class="flex items-center justify-between pt-4 border-t border-border">
+                        <button id="clear-comparison" class="btn btn-ghost text-sm">
+                            Clear Selection
+                        </button>
+                        <button id="export-comparison" class="btn btn-secondary text-sm">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            Export Comparison
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Learning Journey Timeline -->
+<section class="section bg-background-elevated">
+    <div class="section-container">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 animate-slide-up">
+                <h2 class="heading-md font-headline mb-4">
+                    Learning Journey
+                </h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="body-lg text-text-secondary">
+                    My continuous growth and technology adoption over the years
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- 2026 -->
+                <div class="card card-hover flex gap-6 timeline-item">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center border-2 border-accent">
+                            <span class="text-accent font-headline font-bold text-lg">26</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-headline text-xl font-semibold">Advanced Specialization</h3>
+                            <span class="badge badge-accent">Current</span>
+                        </div>
+                        <p class="body-sm text-text-secondary mb-4">
+                            Mastering Vue 3 Composition API, TypeScript advanced patterns, and micro-frontend architectures. Leading team initiatives and mentoring junior developers.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-success">Vue 3 Composition API</span>
+                            <span class="badge badge-success">TypeScript Advanced</span>
+                            <span class="badge badge-success">Micro-frontends</span>
+                            <span class="badge badge-success">Team Leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2025 -->
+                <div class="card card-hover flex gap-6 timeline-item">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center border-2 border-accent/50">
+                            <span class="text-accent font-headline font-bold text-lg">25</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-headline text-xl font-semibold">Full-Stack Expansion</h3>
+                            <span class="body-sm text-text-tertiary">1 year ago</span>
+                        </div>
+                        <p class="body-sm text-text-secondary mb-4">
+                            Expanded into backend development with Node.js and Express. Implemented GraphQL APIs and real-time features with WebSockets.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-accent">Node.js</span>
+                            <span class="badge badge-accent">GraphQL</span>
+                            <span class="badge badge-accent">WebSockets</span>
+                            <span class="badge badge-accent">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024 -->
+                <div class="card card-hover flex gap-6 timeline-item">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center border-2 border-accent/30">
+                            <span class="text-accent/70 font-headline font-bold text-lg">24</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-headline text-xl font-semibold">Vue.js Mastery</h3>
+                            <span class="body-sm text-text-tertiary">2 years ago</span>
+                        </div>
+                        <p class="body-sm text-text-secondary mb-4">
+                            Deep dive into Vue.js ecosystem including Vuex, Vue Router, and Nuxt.js. Built multiple production applications with modern state management.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-accent">Vue.js</span>
+                            <span class="badge badge-accent">Vuex</span>
+                            <span class="badge badge-accent">Nuxt.js</span>
+                            <span class="badge badge-accent">Pinia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2023 -->
+                <div class="card card-hover flex gap-6 timeline-item">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center border-2 border-accent/20">
+                            <span class="text-accent/50 font-headline font-bold text-lg">23</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-headline text-xl font-semibold">Modern JavaScript</h3>
+                            <span class="body-sm text-text-tertiary">3 years ago</span>
+                        </div>
+                        <p class="body-sm text-text-secondary mb-4">
+                            Mastered ES6+ features, async/await patterns, and modern JavaScript tooling. Started exploring TypeScript for type safety.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-accent">ES6+</span>
+                            <span class="badge badge-accent">TypeScript</span>
+                            <span class="badge badge-accent">Webpack</span>
+                            <span class="badge badge-accent">Babel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2022 -->
+                <div class="card card-hover flex gap-6 timeline-item">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center border-2 border-accent/10">
+                            <span class="text-accent/30 font-headline font-bold text-lg">22</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-headline text-xl font-semibold">Foundation Building</h3>
+                            <span class="body-sm text-text-tertiary">4 years ago</span>
+                        </div>
+                        <p class="body-sm text-text-secondary mb-4">
+                            Started professional web development journey. Learned HTML5, CSS3, JavaScript fundamentals, and responsive design principles.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge badge-accent">HTML5</span>
+                            <span class="badge badge-accent">CSS3</span>
+                            <span class="badge badge-accent">JavaScript</span>
+                            <span class="badge badge-accent">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications & Achievements -->
+<section class="section">
+    <div class="section-container">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-slide-up">
+                <h2 class="heading-md font-headline mb-4">
+                    Certifications & Achievements
+                </h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="body-lg text-text-secondary">
+                    Professional certifications and notable achievements in web development
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Certification 1 -->
+                <div class="card card-hover text-center p-8">
+                    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent/10 mb-6">
+                        <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-sm mb-2">Vue.js Certified Developer</h3>
+                    <p class="body-sm text-text-secondary mb-4">Vue.js Official Certification</p>
+                    <span class="badge badge-success">2025</span>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="card card-hover text-center p-8">
+                    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent/10 mb-6">
+                        <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-sm mb-2">JavaScript Advanced</h3>
+                    <p class="body-sm text-text-secondary mb-4">FreeCodeCamp Certification</p>
+                    <span class="badge badge-success">2024</span>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="card card-hover text-center p-8">
+                    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent/10 mb-6">
+                        <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-sm mb-2">UI/UX Design</h3>
+                    <p class="body-sm text-text-secondary mb-4">Google UX Design Certificate</p>
+                    <span class="badge badge-success">2024</span>
+                </div>
+
+                <!-- Achievement 1 -->
+                <div class="card card-hover text-center p-8">
+                    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-warning/10 mb-6">
+                        <svg class="w-10 h-10 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-sm mb-2">GitHub Star</h3>
+                    <p class="body-sm text-text-secondary mb-4">1000+ Stars on Open Source Project</p>
+                    <span class="badge badge-warning">2025</span>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="card card-hover text-center p-8">
+                    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-warning/10 mb-6">
+                        <svg class="w-10 h-10 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-sm mb-2">Community Leader</h3>
+                    <p class="body-sm text-text-secondary mb-4">Vue.js Community Moderator</p>
+                    <span class="badge badge-warning">2024</span>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="card card-hover text-center p-8">
+                    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-warning/10 mb-6">
+                        <svg class="w-10 h-10 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-sm mb-2">Innovation Award</h3>
+                    <p class="body-sm text-text-secondary mb-4">Best Web Application 2025</p>
+                    <span class="badge badge-warning">2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section bg-background-elevated">
+    <div class="section-container">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="card p-12 space-y-6">
+                <h2 class="heading-lg font-headline">
+                    Ready to Work Together?
+                </h2>
+                <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                    Let's discuss how my skills can help bring your project to life. I'm always excited to take on new challenges and collaborate on innovative solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="projects.html" class="btn btn-secondary">
+                        View My Work
+                    </a>
+                    <a href="contact.html" class="btn btn-primary">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Network -->
+<footer class="bg-background border-t border-border py-12">
+    <div class="section-container">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <a href="homepage.html" class="flex items-center space-x-2 group">
+                        <svg class="w-10 h-10 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="url(#footer-logo-gradient)"/>
+                            <path d="M12 28L20 12L28 28H24L20 20L16 28H12Z" fill="#0d1117"/>
+                            <defs>
+                                <linearGradient id="footer-logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#64ffda"/>
+                                    <stop offset="1" stop-color="#7fffd4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="font-headline text-xl font-bold gradient-text">Zizi Xasanov</span>
+                    </a>
+                    <p class="body-sm text-text-secondary">
+                        Crafting digital experiences with precision and creativity.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="link-subtle body-sm">Home</a></li>
+                        <li><a href="about.html" class="link-subtle body-sm">About</a></li>
+                        <li><a href="skills.html" class="link-subtle body-sm">Skills</a></li>
+                        <li><a href="projects.html" class="link-subtle body-sm">Projects</a></li>
+                        <li><a href="contact.html" class="link-subtle body-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h3 class="font-headline text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-surface hover:bg-accent/10 flex items-center justify-center text-text-secondary hover:text-accent transition-all duration-200" aria-label="GitHub profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-surface hover:bg-accent/10 flex items-center justify-center text-text-secondary hover:text-accent transition-all duration-200" aria-label="LinkedIn profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-surface hover:bg-accent/10 flex items-center justify-center text-text-secondary hover:text-accent transition-all duration-200" aria-label="Twitter profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 border-t border-border text-center">
+                <p class="body-sm text-text-secondary">
+                    © 2026 Zizi Xasanov. All Rights Reserved. Built with Vue.js & Tailwind CSS
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    // Skills Data
+    const skillsData = [
+        {
+            id: 1,
+            name: 'Vue.js / Nuxt.js',
+            category: 'frontend',
+            icon: '💻',
+            proficiency: 95,
+            experience: 4,
+            description: 'Expert in Vue 3 Composition API, Vuex, Pinia, and Nuxt.js for building scalable single-page applications with server-side rendering capabilities.',
+            technologies: ['Vue 3', 'Nuxt.js', 'Vuex', 'Pinia', 'Vue Router'],
+            projects: 15
+        },
+        {
+            id: 2,
+            name: 'JavaScript / TypeScript',
+            category: 'frontend',
+            icon: '⚡',
+            proficiency: 90,
+            experience: 5,
+            description: 'Advanced knowledge of modern JavaScript (ES6+) and TypeScript for building type-safe, maintainable applications with excellent developer experience.',
+            technologies: ['ES6+', 'TypeScript', 'Async/Await', 'Promises', 'Modules'],
+            projects: 20
+        },
+        {
+            id: 3,
+            name: 'HTML5 / CSS3',
+            category: 'frontend',
+            icon: '🎨',
+            proficiency: 95,
+            experience: 5,
+            description: 'Mastery of semantic HTML5 and modern CSS3 including Flexbox, Grid, animations, and responsive design principles for pixel-perfect implementations.',
+            technologies: ['HTML5', 'CSS3', 'Flexbox', 'Grid', 'Animations'],
+            projects: 25
+        },
+        {
+            id: 4,
+            name: 'Tailwind CSS',
+            category: 'frontend',
+            icon: '🎨',
+            proficiency: 92,
+            experience: 3,
+            description: 'Proficient in utility-first CSS framework for rapid UI development with custom design systems and component libraries.',
+            technologies: ['Tailwind CSS', 'Custom Themes', 'JIT Mode', 'Plugins'],
+            projects: 12
+        },
+        {
+            id: 5,
+            name: 'Node.js / Express',
+            category: 'backend',
+            icon: '⚡',
+            proficiency: 85,
+            experience: 3,
+            description: 'Solid experience building RESTful APIs, GraphQL servers, and real-time applications with Node.js and Express framework.',
+            technologies: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'WebSockets'],
+            projects: 10
+        },
+        {
+            id: 6,
+            name: 'Git / GitHub',
+            category: 'tools',
+            icon: '🔧',
+            proficiency: 90,
+            experience: 5,
+            description: 'Expert in version control workflows, branching strategies, code reviews, and collaborative development using Git and GitHub.',
+            technologies: ['Git', 'GitHub', 'GitLab', 'Pull Requests', 'CI/CD'],
+            projects: 30
+        },
+        {
+            id: 7,
+            name: 'REST APIs',
+            category: 'backend',
+            icon: '⚡',
+            proficiency: 88,
+            experience: 4,
+            description: 'Experienced in designing and consuming RESTful APIs with proper authentication, error handling, and documentation.',
+            technologies: ['REST', 'JSON', 'JWT', 'OAuth', 'API Design'],
+            projects: 15
+        },
+        {
+            id: 8,
+            name: 'Webpack / Vite',
+            category: 'tools',
+            icon: '🔧',
+            proficiency: 82,
+            experience: 3,
+            description: 'Proficient in modern build tools for optimizing application performance, code splitting, and development workflows.',
+            technologies: ['Webpack', 'Vite', 'Rollup', 'Babel', 'PostCSS'],
+            projects: 8
+        },
+        {
+            id: 9,
+            name: 'UI/UX Design',
+            category: 'design',
+            icon: '🎨',
+            proficiency: 87,
+            experience: 4,
+            description: 'Strong understanding of user-centered design principles, wireframing, prototyping, and creating intuitive user interfaces.',
+            technologies: ['Figma', 'Adobe XD', 'Wireframing', 'Prototyping', 'User Research'],
+            projects: 18
+        },
+        {
+            id: 10,
+            name: 'Responsive Design',
+            category: 'design',
+            icon: '📱',
+            proficiency: 93,
+            experience: 5,
+            description: 'Expert in creating mobile-first, responsive layouts that work seamlessly across all devices and screen sizes.',
+            technologies: ['Mobile-First', 'Media Queries', 'Breakpoints', 'Touch UI', 'Progressive Enhancement'],
+            projects: 22
+        },
+        {
+            id: 11,
+            name: 'Figma / Adobe XD',
+            category: 'design',
+            icon: '🎨',
+            proficiency: 80,
+            experience: 3,
+            description: 'Proficient in design tools for creating high-fidelity mockups, design systems, and collaborative design workflows.',
+            technologies: ['Figma', 'Adobe XD', 'Design Systems', 'Components', 'Prototypes'],
+            projects: 14
+        },
+        {
+            id: 12,
+            name: 'Accessibility (WCAG)',
+            category: 'design',
+            icon: '♿',
+            proficiency: 85,
+            experience: 3,
+            description: 'Committed to building accessible web applications following WCAG guidelines for inclusive user experiences.',
+            technologies: ['WCAG 2.1', 'ARIA', 'Screen Readers', 'Keyboard Navigation', 'Color Contrast'],
+            projects: 16
+        },
+        {
+            id: 13,
+            name: 'MongoDB',
+            category: 'backend',
+            icon: '🗄️',
+            proficiency: 78,
+            experience: 2,
+            description: 'Experience with NoSQL database design, queries, aggregation pipelines, and data modeling for scalable applications.',
+            technologies: ['MongoDB', 'Mongoose', 'Aggregation', 'Indexing', 'Replication'],
+            projects: 7
+        },
+        {
+            id: 14,
+            name: 'Testing (Jest/Vitest)',
+            category: 'tools',
+            icon: '🧪',
+            proficiency: 75,
+            experience: 2,
+            description: 'Proficient in writing unit tests, integration tests, and end-to-end tests for reliable, maintainable code.',
+            technologies: ['Jest', 'Vitest', 'Testing Library', 'Cypress', 'E2E Testing'],
+            projects: 9
+        },
+        {
+            id: 15,
+            name: 'Docker',
+            category: 'tools',
+            icon: '🐳',
+            proficiency: 70,
+            experience: 2,
+            description: 'Basic containerization knowledge for consistent development environments and deployment workflows.',
+            technologies: ['Docker', 'Docker Compose', 'Containers', 'Images', 'Volumes'],
+            projects: 5
+        },
+        {
+            id: 16,
+            name: 'GraphQL',
+            category: 'backend',
+            icon: '📊',
+            proficiency: 80,
+            experience: 2,
+            description: 'Experience building and consuming GraphQL APIs with efficient data fetching and real-time subscriptions.',
+            technologies: ['GraphQL', 'Apollo', 'Subscriptions', 'Schema Design', 'Resolvers'],
+            projects: 6
+        }
+    ];
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    // Render Skills
+    function renderSkills(skills) {
+        const skillsGrid = document.getElementById('skills-grid');
+        const noResults = document.getElementById('no-results');
+
+        if (skills.length === 0) {
+            skillsGrid.innerHTML = '';
+            noResults.classList.remove('hidden');
+            return;
+        }
+
+        noResults.classList.add('hidden');
+
+        skillsGrid.innerHTML = skills.map(skill => `
+                <div class="card card-hover space-y-6 skill-card" data-category="${skill.category}">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-4xl">${skill.icon}</span>
+                            <div>
+                                <h3 class="heading-sm font-headline">${skill.name}</h3>
+                                <p class="body-sm text-text-tertiary">${skill.experience} years experience</p>
+                            </div>
+                        </div>
+                        <span class="badge badge-accent">${skill.proficiency}%</span>
+                    </div>
+
+                    <p class="body-sm text-text-secondary">${skill.description}</p>
+
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="body-sm font-medium">Proficiency Level</span>
+                            <span class="body-sm text-accent font-code">${skill.proficiency}%</span>
+                        </div>
+                        <div class="h-2 bg-surface rounded-full overflow-hidden">
+                            <div class="skill-bar h-full bg-gradient-to-r from-accent to-accent-light rounded-full" data-width="${skill.proficiency}" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="body-sm font-medium mb-3">Technologies & Tools</p>
+                        <div class="flex flex-wrap gap-2">
+                            ${skill.technologies.map(tech => `<span class="badge badge-accent">${tech}</span>`).join('')}
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-border">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            <span class="body-sm">${skill.projects} projects</span>
+                        </div>
+                        <button class="text-accent hover:text-accent-hover transition-colors duration-200" onclick="addToComparison(${skill.id})" aria-label="Add to comparison">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+        // Animate skill bars
+        animateSkillBars();
+    }
+
+    // Initial render
+    renderSkills(skillsData);
+
+    // Filter functionality
+    let currentFilter = 'all';
+    let currentSort = 'default';
+
+    const filterButtons = document.querySelectorAll('.skill-filter-btn');
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentFilter = btn.dataset.category;
+            applyFiltersAndSort();
+        });
+    });
+
+    // Sort functionality
+    const sortSelect = document.getElementById('skill-sort');
+    sortSelect.addEventListener('change', (e) => {
+        currentSort = e.target.value;
+        applyFiltersAndSort();
+    });
+
+    // Reset filters
+    const resetBtn = document.getElementById('reset-filters');
+    resetBtn.addEventListener('click', () => {
+        currentFilter = 'all';
+        currentSort = 'default';
+        sortSelect.value = 'default';
+        filterButtons.forEach(b => b.classList.remove('active'));
+        filterButtons[0].classList.add('active');
+        applyFiltersAndSort();
+    });
+
+    function applyFiltersAndSort() {
+        let filteredSkills = currentFilter === 'all'
+            ? [...skillsData]
+            : skillsData.filter(skill => skill.category === currentFilter);
+
+        // Apply sorting
+        switch(currentSort) {
+            case 'proficiency':
+                filteredSkills.sort((a, b) => b.proficiency - a.proficiency);
+                break;
+            case 'experience':
+                filteredSkills.sort((a, b) => b.experience - a.experience);
+                break;
+            case 'name':
+                filteredSkills.sort((a, b) => a.name.localeCompare(b.name));
+                break;
+        }
+
+        renderSkills(filteredSkills);
+    }
+
+    // Skill bar animation with Intersection Observer
+    function animateSkillBars() {
+        const skillBars = document.querySelectorAll('.skill-bar');
+
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target;
+                    const width = bar.getAttribute('data-width');
+                    setTimeout(() => {
+                        bar.style.width = width + '%';
+                    }, 100);
+                    skillObserver.unobserve(bar);
+                }
+            });
+        }, observerOptions);
+
+        skillBars.forEach(bar => {
+            bar.style.transition = 'width 1.5s ease-out';
+            skillObserver.observe(bar);
+        });
+    }
+
+    // Comparison functionality
+    let comparisonSkills = [];
+
+    function renderComparisonOptions() {
+        const comparisonContainer = document.getElementById('comparison-skills');
+        comparisonContainer.innerHTML = skillsData.map(skill => `
+                <label class="inline-flex items-center space-x-2 cursor-pointer">
+                    <input type="checkbox" value="${skill.id}" class="comparison-checkbox w-4 h-4 rounded border-border text-accent focus:ring-accent focus:ring-offset-background" onchange="updateComparison()">
+                    <span class="body-sm">${skill.icon} ${skill.name}</span>
+                </label>
+            `).join('');
+    }
+
+    function updateComparison() {
+        const checkboxes = document.querySelectorAll('.comparison-checkbox:checked');
+        comparisonSkills = Array.from(checkboxes).map(cb =>
+            skillsData.find(s => s.id === parseInt(cb.value))
+        );
+
+        const comparisonChart = document.getElementById('comparison-chart');
+        const comparisonBars = document.getElementById('comparison-bars');
+
+        if (comparisonSkills.length > 0) {
+            comparisonChart.classList.remove('hidden');
+            comparisonBars.innerHTML = comparisonSkills.map(skill => `
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="body-sm font-medium">${skill.icon} ${skill.name}</span>
+                            <span class="body-sm text-accent font-code">${skill.proficiency}%</span>
+                        </div>
+                        <div class="h-3 bg-surface rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-accent to-accent-light rounded-full transition-all duration-1000" style="width: ${skill.proficiency}%"></div>
+                        </div>
+                    </div>
+                `).join('');
+        } else {
+            comparisonChart.classList.add('hidden');
+        }
+    }
+
+    function addToComparison(skillId) {
+        const checkbox = document.querySelector(`.comparison-checkbox[value="${skillId}"]`);
+        if (checkbox) {
+            checkbox.checked = true;
+            updateComparison();
+            // Scroll to comparison section
+            document.getElementById('comparison-chart').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+
+    // Clear comparison
+    document.getElementById('clear-comparison').addEventListener('click', () => {
+        document.querySelectorAll('.comparison-checkbox').forEach(cb => cb.checked = false);
+        updateComparison();
+    });
+
+    // Export comparison
+    document.getElementById('export-comparison').addEventListener('click', () => {
+        if (comparisonSkills.length === 0) {
+            alert('Please select skills to compare first.');
+            return;
+        }
+
+        const exportData = comparisonSkills.map(skill => ({
+            name: skill.name,
+            proficiency: skill.proficiency,
+            experience: skill.experience,
+            category: skill.category
+        }));
+
+        const dataStr = JSON.stringify(exportData, null, 2);
+        const dataBlob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(dataBlob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'skill-comparison.json';
+        link.click();
+        URL.revokeObjectURL(url);
+    });
+
+    // Initialize comparison options
+    renderComparisonOptions();
+
+    // Timeline animation
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    timelineItems.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        timelineObserver.observe(item);
+    });
+
+    // Filter button styles
+    const style = document.createElement('style');
+    style.textContent = `
+            .skill-filter-btn {
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+                background-color: var(--color-surface);
+                color: var(--color-text-secondary);
+                border: 1px solid var(--color-border);
+                transition: all 0.2s ease-out;
+                cursor: pointer;
+                font-size: 0.875rem;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            .skill-filter-btn:hover {
+                background-color: var(--color-surface-hover);
+                border-color: var(--color-border-hover);
+                color: var(--color-text-primary);
+            }
+
+            .skill-filter-btn.active {
+                background-color: var(--color-accent);
+                color: var(--color-text-inverse);
+                border-color: var(--color-accent);
+            }
+        `;
+    document.head.appendChild(style);
+</script>
+<script id="dhws-dataInjector" src="../../zizi-dev/public/dhws-data-injector.js"></script>
+</body>
+</html>
